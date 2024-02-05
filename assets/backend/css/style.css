@@ -1,0 +1,210 @@
+
+
+.iconcss{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #ffffff;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    border: 1px solid #e9e9ef;
+    border-radius: 50%;
+    margin-right: 16px;
+    /*background: #5156be;*/
+    vertical-align: middle;
+  
+	
+}
+
+.counter-value{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.dash-box-text{
+    font-size: 16px;
+    font-weight: 500; 
+}
+
+.btn-outline-primary{
+    border-color: #0dcaf0;
+    color: #0dcaf0;
+    width:100%;
+    font-size:17px;
+    transition: all 500ms linear;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  border-color: #0dcaf0;
+  background: linear-gradient( 45deg , #17ead9, #6078ea) !important;
+}
+
+.groupformheader{
+  display: flex;
+    justify-content: space-between;   
+}
+
+.x-dropzone {
+	background: #eee;
+	border-radius:5px;
+}
+
+.x-dropzone [xrole="input-container"] {
+	padding:10px;
+	overflow:hidden;
+}
+
+.x-dropzone [xrole="input-container"]:after {
+	clear:both;
+}
+
+.x-dropzone [xrole="previews"] {
+	text-align:center;
+	height:200px;
+	overflow-y:auto;
+}
+
+.x-dropzone .x-dropzone-single[xrole="previews"]{
+	padding-top: 1%;
+}
+
+.x-dropzone .x-dropzone-multiple[xrole="previews"]:after {
+	clear:both;
+}
+
+.x-dropzone [xrole="previews"] div[xrole="placeholder"] {
+	padding-top:10%;
+	width:100%;
+	text-align:center;
+}
+
+.x-dropzone [xrole="previews"] img {
+	object-fit:cover;
+	border-radius:5px;
+	width:100%;
+}
+
+.x-dropzone .x-dropzone-single[xrole="previews"] > div:not([xrole="placeholder"]) {
+	margin:0px auto;
+}
+
+.x-dropzone .x-dropzone-multiple[xrole="previews"] > div:not([xrole="placeholder"]) {
+	float:left;
+}
+
+.x-dropzone .x-dropzone-single[xrole="previews"] > div:not([xrole="placeholder"]) {
+	max-height:200px;
+	padding:5px;
+}
+
+.x-dropzone .x-dropzone-single[xrole="previews"] > div:not([xrole="placeholder"]) > img {
+	height: 180px;
+	width: auto;
+}
+
+.x-dropzone .x-dropzone-multiple[xrole="previews"] > div:not([xrole="placeholder"]) {
+	width:100%;
+	padding:5px;
+}
+
+@media only screen and (max-width: 576px){
+	.x-dropzone .input-parent {
+		width:100%;
+		float:unset;
+	}
+
+	.x-dropzone .clear-parent {
+		width:100%;
+		float:unset;
+	}
+}
+
+@media only screen and (min-width: 576px) {
+	.x-dropzone .x-dropzone-multiple[xrole="previews"] > div:not([xrole="placeholder"]) {
+		width:49.5%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.x-dropzone .x-dropzone-multiple[xrole="previews"] > div:not([xrole="placeholder"]) {
+		width:33%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.x-dropzone .x-dropzone-multiple[xrole="previews"] > div:not([xrole="placeholder"]) {
+		width:24.5%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.x-dropzone .x-dropzone-multiple[xrole="previews"] > div:not([xrole="placeholder"]) {
+		width:19.5%;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.x-dropzone .x-dropzone-multiple[xrole="previews"] > div:not([xrole="placeholder"]) {
+		width:16%;
+	}
+}
+
+
+#content_list .btn
+{
+    position: relative;
+    bottom: 185px;
+    left: 655px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: red;
+    font-size: large;  
+}
+
+.color-greenlightgrad{
+    background: -webkit-gradient(linear, left top, right top, from(#84d9d2), to(#07cdae)) !important;
+    background: linear-gradient(to right, #84d9d2, #07cdae) !important;
+}
+
+.color-orangeredgrad{
+background: -webkit-gradient(linear, left top, right top, from(#ffbf96), to(#fe7096)) !important;
+    background: linear-gradient(to right, #ffbf96, #fe7096) !important;
+}
+
+.color-skybluegrad{
+    background: -webkit-gradient(linear, left top, right top, from(#90caf9), color-stop(99%, #047edf)) !important;
+    background: linear-gradient(to right, #90caf9, #047edf 99%) !important;
+}
+
+.color-skylight{
+
+background: -webkit-gradient(linear, left top, right top, from(#fb61c5), to(#cd42c8)) !important;
+    background: linear-gradient(to right, #fb61c5, #cd42c8) !important;
+}
+
+.color-cornflowerblue{
+background: cornflowerblue;
+}
+
+.color-blue-sky{
+
+background: -webkit-gradient(linear, left top, right top, from(#49e52b), to(#429311)) !important;
+}
+
+.float-sm-right
+{
+    float: right;
+    margin-top: 25px;
+}

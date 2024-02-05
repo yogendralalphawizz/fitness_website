@@ -1,0 +1,35 @@
+// Usage in Controller/Action
+
+$this->load->library('datatable');
+
+$query = $this->db->from('users');
+
+$this->datatable->set_filter('name', function(&$query, $keyword){
+	$query->where('name', $keyword);
+});
+
+$this->datatable->set_column('action', function($row, $db){
+	return '<p style="color:blue;">'. $row['email'] . ' - ' . $row['ip_address'] . '</p>';
+}, 'id');
+
+$this->datatable->raw_columns(['action']);
+
+echo $this->datatable->run($query);
+
+==============================================================================================
+
+// In View
+
+$('#eventsTable').DataTable({
+	"processing": true,
+	"serverSide": true,
+	"ajax": "<?php echo base_url('Controller/Action'); ?>",
+	"columns": [
+		{ "data": 'title' },
+		{ "data": 'category' },
+		{ "data": 'image' },
+		{ "data": 'event_date' },
+		{ "data": 'status' },
+		{ "data": 'action', "orderable": false, "searchable": false }
+	]
+});

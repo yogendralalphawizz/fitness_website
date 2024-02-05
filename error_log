@@ -1,0 +1,13 @@
+
+[02-Jul-2022 05:55:02 UTC] PHP Fatal error:  Cannot redeclare Dashboard::slugify() in /home/xeniumbiocorp/education.xeniumbiocorp.com/application/controllers/admin/Dashboard.php on line 474
+[02-Jul-2022 06:18:30 UTC] PHP Fatal error:  Cannot redeclare Dashboard::slugify() in /home/xeniumbiocorp/education.xeniumbiocorp.com/application/controllers/admin/Dashboard.php on line 475
+[02-Jul-2022 06:19:08 UTC] PHP Fatal error:  Cannot redeclare Dashboard::slugify() in /home/xeniumbiocorp/education.xeniumbiocorp.com/application/controllers/admin/Dashboard.php on line 475
+[13-Jul-2022 12:32:14 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/xeniumbiocorp/sportswear.xeniumbiocorp.com/application/views/errors/html/error_php.php on line 4
+[13-Jul-2022 13:24:04 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/xeniumbiocorp/sportswear.xeniumbiocorp.com/application/views/errors/html/error_php.php on line 4
+[18-Jul-2022 06:25:33 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/xeniumbiocorp/sportswear.xeniumbiocorp.com/application/controllers/Login.php on line 215
+[18-Jul-2022 06:27:31 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/xeniumbiocorp/sportswear.xeniumbiocorp.com/application/controllers/Login.php on line 215
+[18-Jul-2022 06:32:02 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/xeniumbiocorp/sportswear.xeniumbiocorp.com/application/controllers/Login.php on line 215
+[18-Jul-2022 07:08:04 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/xeniumbiocorp/sportswear.xeniumbiocorp.com/application/controllers/Login.php on line 216
+[18-Jul-2022 07:32:53 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/xeniumbiocorp/sportswear.xeniumbiocorp.com/application/controllers/Home.php on line 1629
+[19-Jul-2022 05:13:33 UTC] PHP Fatal error:  Cannot redeclare Home::payment() in /home/xeniumbiocorp/sportswear.xeniumbiocorp.com/application/controllers/Home.php on line 1820
+[19-Jul-2022 10:36:27 UTC] PHP Fatal error:  Cannot redeclare Home_model::profile_data() in /home/xeniumbiocorp/sportswear.xeniumbiocorp.com/application/models/Home_model.php on line 458

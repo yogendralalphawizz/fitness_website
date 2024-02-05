@@ -1,0 +1,45 @@
+// main function for payment start
+public function payment(){
+	$this->load->library('cashier');
+	$this->cashier->driver('cashfree');
+
+	$result = $this->cashier->pre_payment([
+		'order_id' => '4',
+		'order_amount' => 100,
+		'order_currency' => 'INR',
+		'customer_name' => 'Full Name',
+		'customer_email' => 'john.doe@gmail.com',
+		'customer_contact' => '+91833333333',
+		'order_note' => ''
+	]);
+
+	if( ! $result ){
+		echo $this->cashier->message();
+	}
+}
+
+// payment gateway will redirect you here
+public function after_payment(){
+	$this->load->library('cashier');
+
+	$result = $this->cashier->post_payment(100, 'INR');
+	if( $result ){
+		// confirm order and save reference_id in database
+		print_r($result);
+	} else {
+		echo $this->cashier->message();
+	}
+}
+
+// payment gateway will notify you here
+public function payment_webhook(){
+	$this->load->library('cashier');
+
+	$result = $this->cashier->webhook();
+	if( $result ){
+		// confirm order and save reference_id in database if not done already
+		print_r($result);
+	}
+
+	http_response_code(200);
+} 
